@@ -1,9 +1,10 @@
 <h1>Listing assistants</h1>
 
-<table>
+<table style="border:1px solid red;" border="1">
   <tr>
     <th>Name</th>
     <th>Twitter username</th>
+    <th>Phone</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,11 +14,15 @@
   <tr>
     <td><%= assistant.name %></td>
     <td><%= assistant.twitter_username %></td>
+    <td><%= assistant.phone %></td>
+
     <td><%= link_to 'Show', assistant %></td>
     <td><%= link_to 'Edit', edit_assistant_path(assistant) %></td>
     <td><%= link_to 'Destroy', assistant, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
+
+
 </table>
 
 <br />
