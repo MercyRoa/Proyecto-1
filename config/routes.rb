@@ -1,4 +1,6 @@
 AwesomeApp::Application.routes.draw do
+  resources :gifts
+
   resources :assistants
 
   # The priority is based upon order of creation:

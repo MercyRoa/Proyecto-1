@@ -10,6 +10,11 @@
   <%= @assistant.twitter_username %>
 </p>
 
+<ul>
+	<% @assistant.gifts.each do |g|  %>
+		<li><%= g.name %></li>
+	<% end %>
+</ul>
 
 <%= link_to 'Edit', edit_assistant_path(@assistant) %> |
 <%= link_to 'Back', assistants_path %>
